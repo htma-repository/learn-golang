@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {{if gt .Value 10}}
+    <h1>Greater</h1>
+    {{else if eq .Value 10}}
+    <h1>Equal</h1>
+    {{else}}
+    <h1>Less</h1>
+    {{end}}
+  </body>
+</html>

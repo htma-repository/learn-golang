@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section style="max-width: 500px; margin: 0 auto">
+        <h1 style="text-align: center">Update Todo List</h1>
+        <form action="/todo-edit" method="POST">
+          <div style="display: flex; flex-direction: column; row-gap: 0.5rem">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="{{.Name}}" />
+          </div>
+          <div style="display: flex; flex-direction: column; row-gap: 0.5rem">
+            <label for="description">Description</label>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              value="{{.Description}}"
+            />
+          </div>
+          <button
+            type="submit"
+            style="max-width: fit-content; padding: 0.5rem 1rem; margin: 0 auto"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

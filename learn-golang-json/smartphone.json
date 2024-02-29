@@ -1,0 +1,10 @@
+{
+  "Brand": "Samsung",
+  "RAM": 8,
+  "Storage": 128,
+  "Features": ["IP68", "Zoom50x", "120hzScreen"],
+  "Prices": [
+    { "Lite": 2000000, "Regular": 3000000, "Pro": 4500000 },
+    { "Lite": 3000000, "Regular": 4000000, "Pro": 5000000 }
+  ]
+}
