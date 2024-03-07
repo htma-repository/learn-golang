@@ -14,4 +14,5 @@ use (
 	./learn-golang-todolist
 	./learn-golang-unit-test
 	./learn-golang-web
+  ./learn-golang-dependency-injection
 )

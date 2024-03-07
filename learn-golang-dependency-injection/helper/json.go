@@ -16,4 +16,5 @@ func EncodeJSONFromResponse(writer http.ResponseWriter, response interface{}) {
 	encoder := json.NewEncoder(writer)
 	errEncode := encoder.Encode(response)
 	PanicError(errEncode)
+
 }

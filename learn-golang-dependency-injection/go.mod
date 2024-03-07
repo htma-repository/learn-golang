@@ -1,4 +1,4 @@
-module learn-golang-restful-api
+module learn-golang-dependency-injection
 
 go 1.22.0
 
