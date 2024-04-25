@@ -1,9 +1,10 @@
-go 1.22.0
+go 1.22.2
 
 use (
 	./learn-golang-basic
 	./learn-golang-context
 	./learn-golang-database
+	./learn-golang-dependency-injection
 	./learn-golang-embed
 	./learn-golang-goroutine
 	./learn-golang-httprouter
@@ -14,5 +15,5 @@ use (
 	./learn-golang-todolist
 	./learn-golang-unit-test
 	./learn-golang-web
-  ./learn-golang-dependency-injection
+	./learn-golang-generics
 )
