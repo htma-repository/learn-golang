@@ -16,4 +16,6 @@ use (
 	./learn-golang-unit-test
 	./learn-golang-web
 	./learn-golang-generics
+	./learn-golang-migrate
+		./learn-golang-validation
 )

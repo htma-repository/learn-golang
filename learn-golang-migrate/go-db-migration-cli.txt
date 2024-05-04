@@ -1,0 +1,8 @@
+// Up db migration 1 mean up 1 version, if only up mean up all migrations
+- migrate -database "mysql://hutamatr:Rahmanto123~@tcp(localhost:3306)/learn_golang_migrate" -path db/migrations up 1
+// Down db migration 1 mean down 1 version, if only down mean down all migrations
+- migrate -database "mysql://hutamatr:Rahmanto123~@tcp(localhost:3306)/learn_golang_migrate" -path db/migrations down 1
+// Check migrations current version
+- migrate -database "mysql://hutamatr:Rahmanto123~@tcp(localhost:3306)/learn_golang_migrate" -path db/migrations version
+// Force change migration version, used when dirty-state happen & want to change version migration
+- migrate -database "mysql://hutamatr:Rahmanto123~@tcp(localhost:3306)/learn_golang_migrate" -path db/migrations force <migration_version>
