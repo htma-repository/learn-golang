@@ -19,4 +19,5 @@ use (
 	./learn-golang-validation
 	./learn-golang-web
   ./learn-golang-viper
+  ./learn-golang-fiber
 )
