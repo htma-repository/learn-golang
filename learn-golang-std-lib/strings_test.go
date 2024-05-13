@@ -1,11 +1,12 @@
-package main
+package learn_golang_std_lib
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
-func main() {
+func TestStrings(t *testing.T) {
 
 	name := "Hutama Trirahmanto"
 

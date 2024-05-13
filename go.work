@@ -1,4 +1,4 @@
-go 1.22.2
+go 1.22.3
 
 use (
 	./learn-golang-basic
@@ -6,16 +6,17 @@ use (
 	./learn-golang-database
 	./learn-golang-dependency-injection
 	./learn-golang-embed
+	./learn-golang-generics
 	./learn-golang-goroutine
 	./learn-golang-httprouter
 	./learn-golang-json
 	./learn-golang-leetcode
+	./learn-golang-migrate
 	./learn-golang-restful-api
 	./learn-golang-std-lib
 	./learn-golang-todolist
 	./learn-golang-unit-test
+	./learn-golang-validation
 	./learn-golang-web
-	./learn-golang-generics
-	./learn-golang-migrate
-		./learn-golang-validation
+  ./learn-golang-viper
 )

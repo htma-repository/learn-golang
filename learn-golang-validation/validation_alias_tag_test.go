@@ -12,7 +12,7 @@ func TestAliasTag(t *testing.T) {
 
 	newUser := &User{
 		Name:    "John",
-		Address: "",
+		Address: "Jakarta",
 	}
 
 	err := validate.Struct(newUser)

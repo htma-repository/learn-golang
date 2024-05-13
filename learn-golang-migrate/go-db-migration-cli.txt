@@ -1,3 +1,6 @@
+
+// Init create db migrate fo sql
+- migrate create -ext sql -dir db/migrations name_file_migration
 // Up db migration 1 mean up 1 version, if only up mean up all migrations
 - migrate -database "mysql://hutamatr:Rahmanto123~@tcp(localhost:3306)/learn_golang_migrate" -path db/migrations up 1
 // Down db migration 1 mean down 1 version, if only down mean down all migrations
