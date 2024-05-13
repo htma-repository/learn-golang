@@ -1,0 +1,13 @@
+app:
+  name: learn-golang-viper
+  port: 8080
+  version: 1.0.0
+  mode: development
+
+database:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  name: postgres
+  ssl: true
