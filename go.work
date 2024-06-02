@@ -20,4 +20,5 @@ use (
 	./learn-golang-web
   ./learn-golang-viper
   ./learn-golang-fiber
+  ./learn-golang-gorm
 )
