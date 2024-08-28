@@ -1,4 +1,4 @@
-package main
+package learn_golang_basic
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func finishedFunc() {
 	fmt.Println("Error", errMessage)
 }
 
-func blockedUser(user string) bool {
+func isBlockedUser(user string) bool {
 	blockedList := []string{"Alfin", "Riu", "Ayub"}
 	var result bool
 
@@ -29,7 +29,7 @@ func blockedUser(user string) bool {
 
 func newUser(name string, isError bool) string {
 	defer finishedFunc()
-	if blockedUser(name) && !isError {
+	if isBlockedUser(name) && !isError {
 		return "Your blocked!"
 	} else if isError {
 		panic("Error Occurred")

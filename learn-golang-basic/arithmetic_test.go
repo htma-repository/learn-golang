@@ -1,4 +1,4 @@
-package main
+package learn_golang_basic
 
 import (
 	"testing"

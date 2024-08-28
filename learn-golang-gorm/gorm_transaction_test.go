@@ -27,7 +27,6 @@ func TestTransactionSuccess(t *testing.T) {
 	})
 
 	assert.NoError(t, err)
-
 }
 
 func TestTransactionFailed(t *testing.T) {
@@ -40,7 +39,7 @@ func TestTransactionFailed(t *testing.T) {
 			return err
 		}
 
-		err = tx.Create(&User{ID: 1, Name: Name{FirstName: "John-2", LastName: "Doe-2"}, Email: "john@example.com", Password: "password"}).Error
+		err = tx.Create(&User{Model: gorm.Model{ID: 1}, Name: Name{FirstName: "John-2", LastName: "Doe-2"}, Email: "john@example.com", Password: "password"}).Error
 
 		if err != nil {
 			return err
@@ -73,7 +72,7 @@ func TestManualTransactionFailed(t *testing.T) {
 
 	err := tx.Create(&User{Name: Name{FirstName: "John-1", LastName: "Doe-1"}, Email: "john@example.com", Password: "password"}).Error
 
-	err = tx.Create(&User{ID: 1, Name: Name{FirstName: "John-2", LastName: "Doe-2"}, Email: "john@example.com", Password: "password"}).Error
+	err = tx.Create(&User{Model: gorm.Model{ID: 1}, Name: Name{FirstName: "John-2", LastName: "Doe-2"}, Email: "john@example.com", Password: "password"}).Error
 
 	if err == nil {
 		tx.Commit()

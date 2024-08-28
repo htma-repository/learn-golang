@@ -37,7 +37,7 @@ func TestQueryRawGorm(t *testing.T) {
 	var newUserRow User
 	row := Db.Raw("SELECT id, first_name, last_name, email, password, created_at, updated_at FROM users WHERE id = ?", 1).Row()
 
-	err = row.Scan(&newUserRow.ID, &newUserRow.Name.FirstName, &newUserRow.Name.LastName, &newUserRow.Email, &newUserRow.Password, &newUserRow.DateAt.CreatedAt, &newUserRow.DateAt.UpdatedAt)
+	err = row.Scan(&newUserRow.ID, &newUserRow.Name.FirstName, &newUserRow.Name.LastName, &newUserRow.Email, &newUserRow.Password, &newUserRow.CreatedAt, &newUserRow.UpdatedAt)
 	assert.NoError(t, err)
 
 	assert.Equal(t, "Tama", newUserRow.Name.FirstName)
@@ -51,7 +51,7 @@ func TestQueryRawGorm(t *testing.T) {
 
 	for rows.Next() {
 		var newUserRowItem User
-		err = rows.Scan(&newUserRowItem.ID, &newUserRowItem.Name.FirstName, &newUserRowItem.Name.LastName, &newUserRowItem.Email, &newUserRowItem.Password, &newUserRowItem.DateAt.CreatedAt, &newUserRowItem.DateAt.UpdatedAt)
+		err = rows.Scan(&newUserRowItem.ID, &newUserRowItem.Name.FirstName, &newUserRowItem.Name.LastName, &newUserRowItem.Email, &newUserRowItem.Password, &newUserRowItem.CreatedAt, &newUserRowItem.UpdatedAt)
 		assert.NoError(t, err)
 
 		newUserRows = append(newUserRows, newUserRowItem)

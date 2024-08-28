@@ -1,4 +1,4 @@
-package main
+package learn_golang_basic
 
 import (
 	"fmt"
@@ -15,7 +15,7 @@ func TestBreakContinue(t *testing.T) {
 	}
 
 	for i := 1; i <= 10; i++ {
-		if i%2 == 1 {
+		if i%2 != 0 {
 			continue
 		}
 		fmt.Println("Genap", i)

@@ -12,7 +12,8 @@ import (
 func Connection() *gorm.DB {
 	dialect := "hutamatr:Rahmanto123~@tcp(127.0.0.1:3306)/learn_golang_gorm?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dialect), &gorm.Config{
-		Logger: logger.Default.LogMode(logger.Info),
+		Logger:      logger.Default.LogMode(logger.Info),
+		QueryFields: true,
 	})
 
 	if err != nil {
